@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <div>
-        <p>Yo this is my stuff 2021</p>
-      </div>
+      <footer>
+        <p>Following the NetNinja Tutorial (2021)</p>
+      </footer>
     </>
   )
 }
