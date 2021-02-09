@@ -1,13 +1,21 @@
-import React from 'react'
-import Link from 'next/link'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const NotFound = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/')
+    }, 2500)
+  }, [])
+
   return (
     <>
       <div className='not-found'>
-        <h1>These are not the pages you are looking for</h1>
-        <h2>404</h2>
-        <p>Return <Link href='/'><a><b>home</b></a></Link></p>
+        <h1>404</h1>
+        <h2>These are not the droids you're looking for</h2>
+        <p>We'll take you home</p>
       </div>
     </>
   )
