@@ -17,7 +17,7 @@ export default function Home () {
         <Link href='/players'>
           <a className={styles.btn}>See Player Listing</a>
         </Link>
-      </div>]
+      </div>
     </>
   )
 }
